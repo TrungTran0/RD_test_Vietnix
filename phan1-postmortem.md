@@ -32,4 +32,4 @@ Oct 20 01:33:04 web-hcm-07 mysqld[1187]: [ERROR] [MY-000035] [Server] Disk is fu
 - Sau đó chỉnh lại chữ "dailly" thành "daily" trong file logrotate-nginx
 
 6. Phương án phòng ngừa:
-- 
+- Phòng trường hợp này về sau, nên cấu hình công cụ monitor disk trên server, theo dõi disk sử dụng ổn định, khi lượng disk tăng dần theo từng ngày không thấy giảm và khi chạm mức khoảng 80% nên có alert về kênh telegram/discord để tiện theo dõi.
