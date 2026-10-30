@@ -1,7 +1,7 @@
 Phần 1: Điều tra sự cố
 
 
-1. Tóm tắt sự cố: Khi đọc bối cảnh các website trên node bị lỗi 502/504 mà đang chạy dịch vụ nginx + PHP + mysql thì em nghĩ đến khả năng backend có vấn đề đầu tiên dựa vào phản xạ mã lỗi. Gặp trường hợp này cần kiểm tra dịch vụ/port backend còn đang chạy không. Qua kiểm tra log trong dữ liệu sự cố access log, toàn bộ các request đến các trang web của khách hàng trên node đều bị lỗi 502. Nguyên nhân gốc rễ là do node bị full disk, mysql báo lỗi không còn chỗ trống để ghi dữ liệu binlog
+1. Tóm tắt sự cố: Khi đọc bối cảnh các website trên node bị lỗi 502/504 mà đang chạy dịch vụ nginx + PHP + mysql thì em nghĩ đến khả năng backend có vấn đề đầu tiên dựa vào phản xạ mã lỗi. Gặp trường hợp này cần kiểm tra dịch vụ/port backend còn đang chạy không. Qua kiểm tra log trong dữ liệu sự cố access log, toàn bộ các request đến các trang web của khách hàng trên node đều bị lỗi 502. Nguyên nhân gốc rễ là do node bị full disk bởi access log của webserver, mysql báo lỗi không còn chỗ trống để ghi dữ liệu binlog
 2. Timeline sự cố:
 - Kiểm tra syslog, bắt đầu từ thời điểm Oct 14 00:00:02 ghi nhận log rotate lỗi dài cho đến hôm 20/10 (log cuối cùng vào lúc: Oct 20 00:00:02)
 - Bắt đầu từ lúc Oct 20 01:33:04 mysql không ghi được binlog do hết disk -> mysql sập -> nginx gọi xuống không được -> lỗi 502
