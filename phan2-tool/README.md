@@ -10,8 +10,6 @@ cd RD_test_Vietnix/phan2-tool
 chmod +x pve-advisor.sh
 ```
 
-Yêu cầu Ubuntu Server 24.04 với Bash và các tiện ích chuẩn sẵn có. Giữ jq và hệ điều hành được cập nhật bản vá. Khi chép sang máy khác, đặt script và file JSON vào thư mục bạn muốn rồi chạy tại đó.
-
 ## 2. Xem bảng tải và đề xuất migrate
 
 Với snapshot mới của cluster, thay `/path/cluster.json` bằng đường dẫn file thật:
