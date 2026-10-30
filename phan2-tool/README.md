@@ -5,9 +5,8 @@ Tool dùng **Bash + jq**, đọc snapshot JSON để tính tải và đề xuấ
 ## 1. Cài đặt
 
 ```bash
-cd /var/tmp/pve-advisor-bash-20261030
-sudo apt-get update
-sudo apt-get install --no-install-recommends jq
+git clone https://github.com/TrungTran0/RD_test_Vietnix.git
+cd RD_test_Vietnix/phan2-tool
 chmod +x pve-advisor.sh
 ```
 
