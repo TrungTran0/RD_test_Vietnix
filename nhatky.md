@@ -9,21 +9,19 @@
 
 | Thời điểm | Thời lượng | Làm phần nào | Ghi chú (kẹt ở đâu, đã thử gì) |
 |---|---|---|---|
-|23h25 28/10/2026| 1 giờ 22 phút (end bài lúc: 0h47 29/10/2026) | Phần 1| Không có |
+|23h25 28/10/2026| 1 giờ 22 phút | Phần 1| Không có |
+|8h50 30/10/2026| 2 tiếng 07 phút |Phần 2| Không có |
 
 ## Giả định đã đặt ra
-- 
-- (Ví dụ: thông tin nào đề không nói rõ, bạn đã hiểu thế nào và vì sao)
 
 ## Câu hỏi đã gửi cho người ra đề
-
-- (Nếu có)
 
 ## Dùng AI và công cụ
 
 | Bước | Công cụ | Dùng để làm gì | Bạn đã kiểm tra, sửa lại gì |
 |---|---|---|---|
-| | | Gemini | |
+| Phần 2 | ChatGPT | Một số unit test cho các phần logic cốt lõi trong đề bài là như thế nào | |
+| Phần 2 | ChatGPT | Deploy full tool xử lý phần 2 cho tool Proxmox | |
 
 ## Phần chưa xong hoặc chưa hài lòng
 
